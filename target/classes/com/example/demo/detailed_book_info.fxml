@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="644.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.DetailedBookInfoController">
+
+    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Detailed Book Information" />
+
+    <TableView fx:id="bookDetailsTable" prefHeight="617.0" prefWidth="1026.0" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="titleColumn" prefWidth="66.0" text="Title" />
+            <TableColumn fx:id="authorColumn" prefWidth="76.0" text="Author" />
+            <TableColumn fx:id="isbnColumn" prefWidth="68.0" text="ISBN" />
+         <TableColumn fx:id="publisherColumn" prefWidth="65.0" text="Publisher" />
+         <TableColumn fx:id="categoryColumn" minWidth="0.0" prefWidth="64.0" text="Category" />
+            <TableColumn fx:id="avgRatingColumn" minWidth="0.0" prefWidth="120.0" text="Average Rating" />
+            <TableColumn fx:id="noRatingsColumn" minWidth="0.0" prefWidth="120.0" text="Number of Ratings" />
+         <TableColumn fx:id="noCopiesColumn" prefWidth="108.0" text="Available Copies" />
+         <TableColumn fx:id="commentsColumn" prefWidth="81.0" text="Comments" />
+         <TableColumn fx:id="releaseYearColumn" prefWidth="101.0" text="Release Year" />
+            <!-- Add more columns as needed for other book details -->
+        </columns>
+    </TableView>
+</VBox>

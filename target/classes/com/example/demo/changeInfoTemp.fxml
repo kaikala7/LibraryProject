@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ChangeInfoTempController">
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="356.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="changeBookButton" layoutX="111.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleChangeBooks" prefHeight="30.0" prefWidth="404.0" style="-fx-background-color: #FF681F;" text="Change Book Info" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="changeUserButton" layoutX="111.0" layoutY="80.0" mnemonicParsing="false" onAction="#handleChangeUser" prefHeight="15.0" prefWidth="404.0" style="-fx-background-color: #FF681F;" text="Change User Info" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewBorrowingsButton" layoutX="111.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleViewBorrowings" prefHeight="15.0" prefWidth="404.0" style="-fx-background-color: #FF681F;" text="View/Delete Borrowings" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewdeleteUsersButton" layoutX="111.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleViewDeleteUser" prefHeight="15.0" prefWidth="404.0" style="-fx-background-color: #FF681F;" text="View/Delete Users" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #FF681F;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="returnButton" mnemonicParsing="false" onAction="#returnButtonClicked" prefHeight="25.0" prefWidth="151.0" text="Return" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="646.0" text="Options" textFill="WHITE">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

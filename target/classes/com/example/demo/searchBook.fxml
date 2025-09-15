@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SearchBooksController">
+   <children>
+      <TextField fx:id="titleTextField" layoutX="316.0" layoutY="36.0" promptText="Title" />
+      <TextField fx:id="authorTextField" layoutX="313.0" layoutY="70.0" promptText="Author" />
+      <TextField fx:id="releaseYearTextField" layoutX="313.0" layoutY="110.0" promptText="Release Year" />
+      <Button fx:id="searchButton" layoutX="364.0" layoutY="162.0" mnemonicParsing="false" onAction="#searchBooks" text="Search" />
+      <TableView fx:id="booksTableView" layoutY="206.0" prefHeight="266.0" prefWidth="778.0">
+         <columns>
+            <TableColumn fx:id="titleColumn" prefWidth="95.0" text="Title" />
+            <TableColumn fx:id="authorColumn" prefWidth="105.0" text="Author" />
+            <TableColumn fx:id="isbnColumn" prefWidth="131.0" text="ISBN" />
+            <TableColumn fx:id="avgRatingColumn" prefWidth="128.0" text="Average Rating" />
+            <TableColumn fx:id="noRatings" prefWidth="139.0" text="Number of Ratings" />
+         </columns>
+      </TableView>
+      <Button fx:id="returnButton" layoutX="20.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleReturnButton" text="Return" />
+   </children>
+</AnchorPane>

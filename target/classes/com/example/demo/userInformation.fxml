@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.UserInformationController">
+   <children>
+      <TextField fx:id="username" layoutX="226.0" layoutY="60.0" />
+      <TextField fx:id="password" layoutX="226.0" layoutY="96.0" />
+      <TextField fx:id="firstName" layoutX="226.0" layoutY="136.0" />
+      <TextField fx:id="lastName" layoutX="226.0" layoutY="175.0" />
+      <TextField fx:id="adt" layoutX="226.0" layoutY="212.0" />
+      <TextField fx:id="email" layoutX="226.0" layoutY="252.0" />
+      <Button fx:id="saveButton" layoutX="241.0" layoutY="334.0" mnemonicParsing="false" onAction="#saveChangesClicked" prefHeight="25.0" prefWidth="124.0" text="Save Changes" />
+      <Label fx:id="passwordLabel" layoutX="152.0" layoutY="100.0" text="Password:" />
+      <Label fx:id="usernameLabel" layoutX="152.0" layoutY="64.0" prefHeight="17.0" prefWidth="70.0" text="Username:" />
+      <Label fx:id="firstNameLabel" layoutX="152.0" layoutY="140.0" text="First Name:" />
+      <Label fx:id="lastNameLabel" layoutX="152.0" layoutY="179.0" text="Last Name:" />
+      <Label fx:id="adtLabel" layoutX="152.0" layoutY="216.0" text="Adt:" />
+      <Label fx:id="emailLabel" layoutX="152.0" layoutY="252.0" text="Email:" />
+   </children>
+</AnchorPane>
