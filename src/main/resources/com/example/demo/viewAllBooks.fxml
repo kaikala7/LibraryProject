@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ViewAllBooksController">
+   <top>
+      <Button fx:id="returnButton" mnemonicParsing="false" onAction="#returnButtonClicked" style="-fx-background-color: #FFA500;" text="Return" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <TableView fx:id="tableView" prefHeight="429.0" prefWidth="954.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="titleColumn" prefWidth="75.0" text="Title" />
+          <TableColumn fx:id="authorColumn" prefWidth="75.0" text="Author" />
+            <TableColumn fx:id="isbnColumn" prefWidth="75.0" text="ISBN" />
+            <TableColumn fx:id="publisherColumn" prefWidth="75.0" text="Publisher" />
+            <TableColumn fx:id="categoryColumn" prefWidth="75.0" text="Category" />
+            <TableColumn fx:id="releaseYearColumn" prefWidth="95.0" text="Release Year" />
+            <TableColumn fx:id="numCopiesColumn" prefWidth="93.0" text="No. Copies" />
+            <TableColumn fx:id="commentsColumn" prefWidth="71.0" text="Comments" />
+            <TableColumn fx:id="ratingsColumn" prefWidth="79.0" text="Ratings" />
+            <TableColumn fx:id="averageRatingColumn" prefWidth="119.0" text="Average Rating" />
+            <TableColumn fx:id="numRatingsColumn" prefWidth="119.0" text="No. Ratings" />
+        </columns>
+      </TableView>
+   </left>
+</BorderPane>
